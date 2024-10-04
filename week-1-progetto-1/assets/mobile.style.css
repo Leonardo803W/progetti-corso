@@ -1,7 +1,44 @@
 body{
     height: 500px;
+    text-align: center;
+}
+
+header{
+    background-color: black;
+}
+
+header img{
+    padding: 2em;
+}
+
+main h1,h4,h3{
+    color: #25a2c3;
 }
 
 #section-1{
     background-image: url(./images/banner.jpg);
+    height: 25em;
+    background-size: cover;
+    background-position: 80%;
+}
+
+#section-1 h1{
+    font-weight: bold;
+    font-size: xx-large;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 2em;
+}
+
+#section-1 p{
+    padding: 2em;
+    font-size: x-large;
+}
+
+#section-1 button{
+    font-size: x-large;
+    color: white;
+    background-color: #f04c2f;
+    border-color: #f04c2f;
+    border-radius: 5px;
 }
