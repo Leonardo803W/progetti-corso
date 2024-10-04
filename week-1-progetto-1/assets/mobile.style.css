@@ -1,0 +1,7 @@
+body{
+    height: 500px;
+}
+
+#section-1{
+    background-image: url(./images/banner.jpg);
+}
