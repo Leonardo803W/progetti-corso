@@ -1,1 +1,84 @@
 /* Your styles here */
+header{
+    background-color: #202C3B;
+}
+
+header img{
+    height: 2.5em;
+    margin: 1em;
+}
+
+header div{
+    background-color: #34475B;
+    color: white;
+    display: flex;
+}
+
+header p{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+main{
+    text-align: center;
+    color: white;
+    background-color: #EAF0EE;
+    padding-top: 1em;
+}
+
+#introduzione{
+    background-color: #F76400;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#central{
+    background-image: url(./images/bg-image.png);
+    height: 7em;
+    background-size: contain;
+    margin: 1em;
+}
+
+#central h1{
+    padding-top: 1.5em;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#central p{
+    padding-top: 1em;
+}
+
+#section1{
+    background-color: white;
+}
+
+#intro{
+    color: black;
+    text-align: justify;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+#section1 img{
+    height: 200px;
+    width: 200px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 3em;
+    border-radius: 7%;
+    margin-left: 1em;
+}
+
+#section1 div{
+    display: inline-flex;
+}
+
+#section2{
+    margin: 1em;
+    color: black;
+}
+
+#section2 img{
+    width: 100%;
+}
