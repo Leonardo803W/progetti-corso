@@ -62,7 +62,7 @@ const cars = [
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
-cars.detail = []
+cars.details = []
 let passaggio
 
 for(let i = 0; i < cars.length; i ++)
