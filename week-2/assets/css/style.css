@@ -52,7 +52,7 @@ main{
 }
 
 #central p{
-    padding-top: 1em;
+    font-weight: bold;
     font-family: sans-serif;
 }
 
@@ -64,14 +64,42 @@ main{
     color: black;
     text-align: justify;
     padding-top: 1em;
-    padding-left: 1em;
 }
 
-#section1 img{
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border-radius: 7%;
-    width: 100%;
+#intro-photo1{
+    background-image: url(./images/img_1.jpg);
+    height: 16em;
+    width: 13em;
+    background-size: cover;
+    border-radius: 10%;
+    background-position: 51%;
+}
+
+#intro-photo2{
+    background-image: url(./images/img_2.jpg);
+    height: 16em;
+    width: 13em;
+    background-size: cover;
+    border-radius: 10%;
+    background-position: 51%;
+}
+
+#intro-photo3{
+    background-image: url(./images/img_3.jpg);
+    height: 16em;
+    width: 13em;
+    background-size: cover;
+    border-radius: 10%;
+    background-position: 51%;
+}
+
+#intro-photo4{
+    background-image: url(./images/img_4.jpg);
+    height: 16em;
+    width: 13em;
+    background-size: cover;
+    border-radius: 10%;
+    background-position: 51%;
 }
 
 #section1{
@@ -82,15 +110,20 @@ main{
     font-weight: bold;
     font-family: sans-serif;
     margin-left: 1em;
-    margin-right: 1em;
+    padding-bottom: 1em;
 }
 
 #section1 a{
-    color: #30a0ef;
+    color: #368aaf;
+    font-size: small;
+    font-weight: bolder;
+    text-decoration: auto;
+    padding-left: 1em;
 }
 
 #section1 div{
     display: inline-flex;
+    padding-bottom: 1em;
 }
 
 #section2{
@@ -99,7 +132,11 @@ main{
 }
 
 #section2 a{
-    color: #30a0ef;
+    color: #368aaf;
+    font-size: small;
+    font-weight: bolder;
+    text-decoration: auto;
+    padding-left: 1em;
 }
 
 #section2 p{
@@ -117,7 +154,11 @@ main{
 }
 
 #section3 a{
-    color: #30a0ef;
+    color: #368aaf;
+    font-size: small;
+    font-weight: bolder;
+    text-decoration: auto;
+    padding-left: 1em;
 }
 
 #section3 p{
