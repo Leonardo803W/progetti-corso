@@ -218,13 +218,42 @@ console.log(rollTheDices(20))
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
-const howManyDays = function() {
+const inputDate = '2024-10-01'
+
+const howManyDays = function (a) {
   
+  const chosenDate = new Date(a)
+  
+  const today = new Date()
+  
+  const differenceInMillis = today - chosenDate
+  
+  const differenceInDays = Math.floor(differenceInMillis / (1000 * 60 * 60 * 24))
+
+  console.log("Giorni trascorsi" + ' ' + differenceInDays)
 }
+
+howManyDays(inputDate)
+
 
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
+const birthday = '24-06-2002'
+
+const isTodayMyBirthday = function(date) {
+
+  if(date === birthday)
+  {
+    console.log("si oggi e il mio compleanno")
+  }
+  else
+  {
+    console.log("oggi non e il mio compleanno")
+  }
+}
+
+isTodayMyBirthday('24-06-2000')
 
 // Arrays & Oggetti
 
@@ -234,14 +263,35 @@ const howManyDays = function() {
   Scrivi una funzione chiamata "deleteProp" che riceve un oggetto e una stringa come parametri; deve ritornare l'oggetto fornito dopo aver eliminato
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
+const maglione = 
+  {
+    size: 'L',
+    color: 'black',
+    sale: 20,
+    brend: 'Oliver'
+  }
+
+const deleteProp = function (object, property) {
+
+  if(object.hasOwnProperty(property))
+  {
+    delete object[property]
+  }
+
+  return object
+}
+
+console.log(deleteProp(maglione, 'brend'))
 
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
 
+
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
+
 
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
@@ -445,3 +495,94 @@ const movies = [
       'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg',
   },
 ]
+
+//esercizio 12
+const newestMovie = (array) => {
+
+  let result = { Year: 1900 }
+
+  array.forEach((movie) => {
+
+    let currentYear = parseInt(movie.Year)
+
+    if (currentYear > result.Year) {
+      result = movie
+    }
+  })
+
+  
+  console.log(result)
+}
+
+newestMovie(movies)
+
+//esercizio 13
+const countMovies = (array) => {
+
+  return array.length
+}
+
+console.log(countMovies(movies))
+
+//esercizio 14
+function onlyTheYears(movies) {
+
+  return movies.map(movie => movie.Year);
+}
+
+const years = onlyTheYears(movies);
+console.log(years);
+
+//esercizio 15
+const onlyInThisMillennium = (array) => {
+
+  return array.filter((movie) => {
+
+    return parseInt(movie.Year) < 1999
+  })
+}
+
+console.log(onlyInThisMillennium(movies))
+
+//esercizio 16
+const sumAllTheYears = (array) => {
+
+  return array.reduce((acc, curr) => acc + parseInt(curr.Year), 0)
+}
+
+console.log(sumAllTheYears(movies))
+
+//esercizio 17
+function searchByTitle(searchString) 
+{
+
+  return movies.filter(movie => 
+      movie.Title.toLowerCase().includes(searchString.toLowerCase())
+  )
+}
+
+console.log(searchByTitle('avengers'))
+
+//esercizio 18
+function searchAndDivide(array) {
+  const result = {
+      match: [],
+      unmatch: []
+  };
+
+  movies.forEach(movie => {
+
+      if (movie.Title.toLowerCase().includes(array.toLowerCase())) 
+        {
+          result.match.push(movie);
+      } 
+      else 
+      {
+          result.unmatch.push(movie);
+      }
+  });
+
+  return result;
+}
+
+console.log(searchAndDivide('Lord'));
