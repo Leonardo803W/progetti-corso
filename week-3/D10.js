@@ -323,22 +323,61 @@ console.log(deleteProp(maglione, 'brend'))
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
+const selezionaContainer = function () {
+
+  var container = document.getElementById("container");
+
+  return container;
+}
 
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+const selezionaTd = function () {
+ 
+  const tdElements = document.querySelectorAll('td');
+  
+  return tdElements;
+}
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
+const stampaContenutoTD = function () {
+  
+  const celleTD = document.querySelectorAll('td')
+
+  
+  celleTD.forEach(td => {
+      
+      console.log(td.textContent)
+  })
+}
 
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
+const aggiungiSfondo = function () {
+  
+  const link = document.querySelectorAll('a')
+
+  link.forEach(function(element) {
+      element.style.backgroundColor = 'red'
+  })
+}
+
 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
+const addItemToList = function () {
+  
+  const list = document.getElementById("myList");
+  
+  const newItem = document.createElement("li");
+  
+  list.appendChild(newItem);
+}
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
@@ -553,7 +592,7 @@ const sumAllTheYears = (array) => {
 console.log(sumAllTheYears(movies))
 
 //esercizio 17
-function searchByTitle(searchString) 
+const searchByTitle = function (searchString) 
 {
 
   return movies.filter(movie => 
@@ -564,7 +603,7 @@ function searchByTitle(searchString)
 console.log(searchByTitle('avengers'))
 
 //esercizio 18
-function searchAndDivide(array) {
+const searchAndDivide = function (array) {
   const result = {
       match: [],
       unmatch: []
