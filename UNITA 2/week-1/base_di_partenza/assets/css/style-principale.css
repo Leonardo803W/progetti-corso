@@ -1,0 +1,100 @@
+header{
+    background-color: #ffc017;
+    padding: 1em;
+    border-bottom: solid black 1px;
+}
+
+#top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div{
+    display: flex;
+}
+
+header p{
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+#started{
+    background-color: #191919;
+    color: white;
+    border-radius: 20px;
+}
+
+#section1{
+    height: 300px;
+    background-color: #ffc017;
+    padding-left: 1em;
+    border-bottom: solid 1px black;
+}
+
+h1{
+    padding-top: 1.5em;
+    font-size: xxx-large;
+}
+
+h2{
+    padding-top: 1em;
+    font-size: larger;
+}
+
+#reading{
+    width: 18%;
+    margin-top: 2em;
+    padding: 0.5em;
+    background-color: #191919;
+    color: white;
+    border-radius: 20px;
+}
+
+#section2{
+    margin-top: 2em;
+    margin-left: 1.5em;
+}
+
+#trending{
+    display: flex;
+    align-items: center;
+}
+
+#trending img{
+    margin-right: 1em;
+}
+
+.news{
+    display: flex;
+    margin-top: 1em;
+}
+
+.number{
+    font-size: x-large;
+    margin-right: 1em;
+    opacity: 0.3;
+}
+
+.news img{
+    height: 20px;
+    border-radius: 100%;
+}
+
+.news h3{
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+.surname{
+    display: flex;
+    align-items: center;
+}
+
+.surname p{
+    margin-left: 0.5em;
+}
+
+.description{
+    margin-top: 0.5em;
+}
