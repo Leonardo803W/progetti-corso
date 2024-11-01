@@ -1,3 +1,9 @@
+body{
+    font-family: sans-serif;
+}
+
+/*style header*/
+
 header{
     background-color: #ffc017;
     padding: 1em;
@@ -25,6 +31,8 @@ header p{
     border-radius: 20px;
 }
 
+/*style main e sezione 1*/
+
 #section1{
     height: 300px;
     background-color: #ffc017;
@@ -43,17 +51,22 @@ h2{
 }
 
 #reading{
-    width: 18%;
+    max-width: 25%;
+    min-width: 20%;
     margin-top: 2em;
     padding: 0.5em;
     background-color: #191919;
     color: white;
     border-radius: 20px;
+    text-align: center;
 }
+
+/*style sezione 2*/
 
 #section2{
     margin-top: 2em;
     margin-left: 1.5em;
+    margin-bottom: 2em;
 }
 
 #trending{
@@ -88,7 +101,13 @@ h2{
 
 .surname{
     display: flex;
-    align-items: center;
+    align-items: end;
+    font-weight: bold;
+
+    /*
+        questa classe c'e' sia sulla sezione 2 sia sulla sezione 3
+        poiche' hanno le stesse necessita'
+    */
 }
 
 .surname p{
@@ -97,4 +116,105 @@ h2{
 
 .description{
     margin-top: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.5;
+}
+
+/*style sezione 3*/
+
+#section3{
+    margin: 2em;
+}
+
+#section3 h3{
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: small;
+}
+
+#section3 div{
+    flex-wrap: wrap;
+    display: flex;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: solid 1px #7777774f;
+}
+
+#section3 p{
+    padding: 0.5em;
+    opacity: 0.8;
+    border: solid 1px gray;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+}
+
+#section3 ul{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+#section3 li{
+    margin-right: 2em;
+    margin-top: 0.5em;
+    opacity: 0.5;
+}
+
+/*style sezione 4*/
+
+#section4{
+    margin: 2em;
+}
+
+#section4 article{
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.surname img{
+    height: 20px;
+    border-radius: 100%;
+}
+
+#section4 h3{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.description2{
+    display: flex;
+    margin-top: 0.5em;
+    justify-content: space-between;
+    font-size: small;
+}
+
+.text{
+    opacity: 0.7;
+}
+
+.description3{
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+}
+
+.category{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    background-color: #c9c9c9a6;
+    padding: 0.5em;
+    border-radius: 20px;
+}
+
+.principal-photo{
+    height: 10em;
+    margin-left: 1em;
+}
+
+.principal-photo img{
+    height: 100%;
 }
