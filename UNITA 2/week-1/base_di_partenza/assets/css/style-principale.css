@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 body{
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-style: normal;
 }
 
 /*style header*/
 
 #testa{
+    padding-right: 2em;
     background-color: #ffc017;
     padding: 1em;
     border-bottom: solid black 1px;
@@ -32,6 +38,8 @@ body{
 #testa p{
     margin: 0.5em;
     padding: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
 }
 
 #started{
@@ -50,6 +58,15 @@ body{
     border-bottom: solid 1px black;
 }
 
+iframe{
+    height: 100%;
+    width: 150%;
+}
+
+#plus-page{
+    display: none;
+}
+
 h1{
     padding-top: 1.5em;
     font-size: xxx-large;
@@ -65,6 +82,8 @@ h2{
     min-width: 20%;
     margin-top: 2em;
     padding: 0.5em;
+    padding-right: 2em;
+    padding-left: 2em;
     background-color: #191919;
     color: white;
     border-radius: 20px;
@@ -75,7 +94,8 @@ h2{
 
 #section2{
     margin-top: 2em;
-    margin-left: 1.5em;
+    margin-left: 1em;
+    margin-right: 3em;
     margin-bottom: 2em;
 }
 
@@ -91,6 +111,7 @@ h2{
 .news{
     display: flex;
     margin-top: 1em;
+    margin-right: 2em;
 }
 
 .number{
@@ -113,15 +134,17 @@ h2{
     display: flex;
     align-items: center;
     font-weight: bold;
-
+    
     /*
-        questa classe c'e' sia sulla sezione 2 sia sulla sezione 3
-        poiche' hanno le stesse necessita'
+    questa classe c'e' sia sulla sezione 2 sia sulla sezione 3
+    poiche' hanno le stesse necessita'
     */
 }
 
 .surname p{
     margin-left: 0.5em;
+    font-size: small;
+    font-weight: 500;
 }
 
 .description{
@@ -140,7 +163,6 @@ h2{
 #section3 h3{
     margin-bottom: 1em;
     font-weight: bold;
-    font-size: small;
 }
 
 #section3 div{
@@ -150,10 +172,11 @@ h2{
     padding-bottom: 2em;
     padding-top: 1em;
     border-bottom: solid 1px #7777774f;
+    opacity: 0.7;
 }
 
 #section3 p{
-    padding: 0.5em;
+    padding: 1em;
     opacity: 0.8;
     border: solid 1px gray;
     margin-bottom: 0.5em;
@@ -182,6 +205,7 @@ h2{
     display: flex;
     align-items: center;
     margin-top: 2em;
+    justify-content: space-between;
 }
 
 .surname img{
@@ -192,8 +216,8 @@ h2{
 #section4 h3{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    font-size: x-large;
-    font-weight: bold;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 .description2{
@@ -205,6 +229,8 @@ h2{
 
 .text{
     opacity: 0.7;
+    font-size: smaller;
+    font-weight: lighter;
 }
 
 .description3{
@@ -227,31 +253,94 @@ h2{
 }
 
 .principal-photo img{
-    height: 100%;
+    height: 85%;
 }
 
+
 @media screen and (min-width: 576px) {
-
-    .inside{
-        display: flex;
-        justify-content: space-between;
-        margin-right: 2em;
-    }
-
+    
     .news{
-        width: 45%;
+        width: 100%;
     }
-
+    
     .news h3{
         margin-top: 1em;
     }
-
+    
     .description p{
         margin-top: 1em;
     }
-
+    
     #top-bar-invisible{
+        display: inline-flex;
+    }
+    
+    #section1{
         display: flex;
-        transition: 1s;
+    }
+    
+    #plus-page{
+        overflow: hidden;
+        display: inline;
+    }
+    
+    .inside{
+        padding-right: 2em;
+    }
+    
+    #great-inside{
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    #great-inside{
+        display: block;
+    }
+    
+    #plus-page{
+        width: 83%;
+    }
+    
+    iframe{
+        height: 100%;
+        width: 104%;
+    }
+    
+    #section1{
+        padding-left: 3em;
+        padding-bottom: 2em;
+    }
+    
+    #section1 h2{
+        padding-right: 0.5em;
+    }
+    
+    #top-bar-visible{
+        padding-right: 6em;
+    }
+    
+    #big-section{
+        display: flex;
+    }
+    
+    #section3{
+        order: 1;
+    }
+    
+    .inside{
+        display: flex;
+        width: 100%;
+    }
+    
+    header img{
+        padding-left: 3em;
+    }
+
+    
+    #section2{
+        margin-left: 3em;
     }
 }
