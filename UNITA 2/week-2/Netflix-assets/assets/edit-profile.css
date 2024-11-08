@@ -1,0 +1,40 @@
+header img{
+    height: 3em;
+}
+
+main{
+    margin-top: 5em;
+    margin-left: 25em;
+    margin-right: 25em;
+}
+
+main img{
+    height: 6em;
+}
+
+#username{
+    padding: 0.5em;
+    font-size: small;
+}
+
+main{
+    padding: 0.3em;
+}
+
+button img{
+    height: 1em;
+}
+
+#rating{
+    font-size: small;
+    width: 40%;
+    padding: 0.5em;
+}
+
+#secondary{
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-right: 1em;
+    padding-left: 1em;
+    opacity: 0.5;
+}
