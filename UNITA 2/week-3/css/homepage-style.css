@@ -1,0 +1,23 @@
+body{
+    /*background-image: url(./img/backroung\ immagine\ body.jpg);
+    background-repeat: no-repeat;*/
+}
+
+#navbar-top{
+    border-top: solid 2px red;
+}
+
+#logo-navbar{
+    height: 3em;
+    border-radius: 20px;
+}
+
+#logo-centrale{
+    height: 3em;
+    border-radius: 20px;
+    width: 30%;
+}
+
+footer{
+    border-top: solid 2px blue;
+}
