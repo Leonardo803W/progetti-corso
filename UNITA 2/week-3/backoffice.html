@@ -54,10 +54,10 @@
               </nav>
 
           <h1 class="m-5">
-            I tuoi VideoGames
+            Aggiungi o Modifica Prodotto
           </h1>
           <h3 class="m-5">
-            Compra qua i tuoi VideoGames e preparati per emozioni forti! 
+            Inizia con una nuova sessione e preparati per emozioni forti! 
         </h3>
 
         </header>
@@ -66,40 +66,33 @@
 
           <div class="container">
             <div class="row justify-content-center">
-              <div class="col col-12 col-md-8 col-lg-6">
-                
-                <form id="concert-form">
-
-                  <div class="mb-2">
-                    <label for="name" class="form-label">Nome VideoGames</label>
-                    <input type="text" class="form-control" id="name" />
-                  </div>
-
-                  <div class="mb-2">
-                    <label for="description" class="form-label"
-                      >Descrizione VideoGames</label
-                    >
-                    <input type="text" class="form-control" id="description" />
-                  </div>
-
-                  <div class="mb-2">
-                    <label for="price" class="form-label">Prezzo VideoGames</label>
-                    <input type="number" class="form-control" id="price" />
-                  </div>
-
-                  <div class="mb-2">
-                    <label for="brand" class="form-label">Brand VideoGames</label>
-                    <input type="text" class="form-control" id="brand" />
-                  </div>
-
-                  <div class="mb-2">
-                    <label for="immagine" class="form-label">Immagine Copertina</label>
-                    <input src="src" class="form-control" id="immagine" />
-                  </div>
-
-                  <button type="submit" class="btn btn-primary">
-                    Salva VideoGames
-                  </button>
+              <div class="col col-12 col-md-6 col-lg-2">
+                <form id="product-form">
+                    <div class="mb-1">
+                        <p>Brand</p>
+                        <input type="text" id="brand" required>
+                      </div>
+                    <div class="mb-2">
+                        <p>URL Immagine</p>
+                        <input type="text" id="imageUrl" required>
+                      </div>
+                    <div class="mb-2">
+                        <p>Nome Videogames</p>
+                        <input type="text" id="name" required>
+                      </div>
+                      <div class="mb-2">
+                        <p>Descrizione Videogames</p>
+                        <input type="text" id="description" required>
+                      </div>
+                      <div class="mb-2">
+                        <p>Prezzo Videogames</p>
+                        <input type="number" id="price" required>
+                      </div>
+                      <div class="mb-2">
+                        <label for="productId" class="form-label"></label>
+                        <input type="hidden" class="form-control" id="productId">
+                      </div>
+                      <button type="submit">Salva</button>
                 </form>
               </div>
             </div>
@@ -121,6 +114,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./script/backoffice.js"></script>
+    <script src="./script/meccanismo.js"></script>
 </body>
 </html>

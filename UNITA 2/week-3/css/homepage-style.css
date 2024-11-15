@@ -1,23 +1,33 @@
 body{
     /*background-image: url(./img/backroung\ immagine\ body.jpg);
     background-repeat: no-repeat;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    background-image: url(./img/vabar\ centrale.jpg);
+    background-size: contain;
+}
+
+#navbarSupportedContent{
+    margin-left: 6em;
 }
 
 #navbar-top{
     border-top: solid 2px red;
 }
 
-#logo-navbar{
-    height: 3em;
+.logo{
+    height: 4em;
     border-radius: 20px;
 }
 
-#logo-centrale{
-    height: 3em;
-    border-radius: 20px;
-    width: 30%;
-}
 
 footer{
     border-top: solid 2px blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
