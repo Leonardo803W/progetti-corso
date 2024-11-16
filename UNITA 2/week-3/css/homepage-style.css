@@ -1,6 +1,5 @@
 body{
-    /*background-image: url(./img/backroung\ immagine\ body.jpg);
-    background-repeat: no-repeat;*/
+    background-image: url(./img/backroung\ immagine\ body.jpg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
