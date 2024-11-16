@@ -20,9 +20,14 @@ function getProducts() {
         }
         return response.json()
     })
+
     .then(products => {
+        
+        console.log(products)
+
         renderProducts(products)
     })
+
     .catch(error => {
         console.error('Errore:', error.message)
         alert('Errore durante il caricamento dei prodotti.')
@@ -57,8 +62,8 @@ function saveProduct(event) {
         description: document.getElementById('description').value,
         brand: document.getElementById('brand').value,
         imageUrl: document.getElementById('imageUrl').value,
-        price: document.getElementById('price').value
-    }
+        price: parseFloat(document.getElementById('price').value) 
+    }    
 
     const method = productId ? 'PUT' : 'POST'
     const url = productId ? `${apiUrl}${productId}` : apiUrl
