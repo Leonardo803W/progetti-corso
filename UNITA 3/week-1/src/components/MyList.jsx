@@ -1,11 +1,13 @@
 //3ec99fb7
 
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Spinner } from 'react-bootstrap';
 import React, { useEffect, useState } from 'react';
 
 const MyList = () => {
     const [data, setData] = useState([]);
     const [index, setIndex] = useState(0);
+    const [loading, setLoading] = useState(true); 
+    const [error, setError] = useState(null); 
 
     const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex);
@@ -13,6 +15,8 @@ const MyList = () => {
 
     useEffect(() => {
         const fetchData = async () => {
+            setLoading(true); 
+            setError(null); 
             try {
                 const response = await fetch('http://www.omdbapi.com/?apikey=3ec99fb7&s=animation');
                 if (!response.ok) {
@@ -20,32 +24,41 @@ const MyList = () => {
                 }
                 const result = await response.json();
                 console.log(result)
-                setData(result.Search); // Aggiorna lo stato con i risultati
+                setData(result.Search || []);
             } catch (error) {
                 console.error('There was a problem with the fetch operation:', error);
+                setError(error.message);
+            } finally {
+                setLoading(false);
             }
         };
-        fetchData(); // Chiamata alla funzione fetchData
-    }, []); // Passa un array vuoto come secondo argomento per eseguire l'effetto una sola volta al montaggio
+        fetchData(); 
+    }, []); 
+
+    if (loading) {
+        <Spinner animation="border" role="status" variant="success">
+            <span className="visually-hidden">Loading...</span>
+        </Spinner>
+    }
+
+    if (error) {
+        return <div className="error">There was an error: {error}</div>; 
+    }
 
     return (
-        <>
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-                {data.map((item) => {
-                    return (
-                           
-                            <Carousel.Item key={item.imdbID}>
-                                <img src={item.Poster} />
-                                <Carousel.Caption>
-                                <h3>{item.Title}</h3>
-                                <p>Anno d'uscita: {item.Year}</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                          
-                        )
-                    })}
-            </Carousel>
-        </>
+        <Carousel activeIndex={index} onSelect={handleSelect} interval={null} className='movies-carousel'>
+            {data.map((item) => (
+                <Carousel.Item key={item.imdbID}>
+                    <div className="carousel-item-content">
+                        <img src={item.Poster} alt={item.Title} />
+                    </div>
+                    <Carousel.Caption>
+                        <h3>{item.Title}</h3>
+                        <p>Anno d'uscita: {item.Year}</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            ))}
+        </Carousel>
     );
 };
 

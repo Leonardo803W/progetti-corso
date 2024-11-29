@@ -1,4 +1,5 @@
 import { Container } from 'react-bootstrap';
+import Spinner from 'react-bootstrap';
 
 import Movies from './Movies';
 import MyList from './MyList';
@@ -7,7 +8,7 @@ import Series from './Series';
 const Gallerie = () => {
     return (
         <>
-        <h3>
+        <h3 className=' m-4'>
           Film
         </h3>
 
@@ -15,7 +16,7 @@ const Gallerie = () => {
             <Movies/>
         </Container>
 
-        <h3>
+        <h3 className=' m-4'>
           Serie
         </h3>
 
@@ -23,7 +24,7 @@ const Gallerie = () => {
             <Series/>
         </Container>
 
-        <h3>
+        <h3 className=' m-4'>
           Visti di Recente
         </h3>
 

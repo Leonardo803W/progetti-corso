@@ -4,13 +4,14 @@ const Introduction = () => {
 
     return (
         <>
-            <h1>
-                TV SHOWS
-            </h1>
+            <div className=" d-flex align-items-center">
+                <h1 className=" ms-4">
+                    TV SHOWS
+                </h1>
 
-            <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                    Dropdown Button
+                <Dropdown className=" ms-4">
+                <Dropdown.Toggle className=" bg-black border-light" id="dropdown-basic">
+                    Generes
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
@@ -18,7 +19,8 @@ const Introduction = () => {
                     <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                     <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                 </Dropdown.Menu>
-            </Dropdown>
+                </Dropdown>
+            </div>
         </>
     )
 }
