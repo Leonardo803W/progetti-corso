@@ -1,18 +1,20 @@
 import { useEffect, useState } from "react";
-import { Alert } from "react-bootstrap";
+import { Alert, } from "react-bootstrap";
+
+import ListaLuoighi from "./ListaLuoighi";
 import CardMeteo from "./CardMeteo";
 
-const MainComponent = () => {
+const MainComponent = (props) => {
 
-    const key = '3efe250117031385f4bd4b3fc329932b';
+    const key = '5fb43d9317a963bf83907952a8a8a3f3';
     const [data, setData] = useState({});
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('https://api.openweathermap.org/data/2.5/weather?q=roma&appid=' + key)
+        fetch('https://api.openweathermap.org/data/2.5/weather?q=' + props.inputValue + '&appid=' + key)
             .then((response) => {
 
-                    console.log(response)
+                    //console.log(response)
 
                 if (response.ok) {
                     return response.json();
@@ -22,7 +24,9 @@ const MainComponent = () => {
             })
             .then((serschResults) => {
                 setData(serschResults);
-                setError(null);
+                setError(null);    
+                
+                //console.log(data)
             })
             .catch((error) => {
                 setError(error.message);
@@ -35,11 +39,12 @@ const MainComponent = () => {
         return <Alert variant="danger">{error}</Alert>;
     }
 
-    console.log(data)
-
     return (
             <>
-                <CardMeteo data = {data}/>
+                <div className=" d-flex justify-content-around">
+                    <ListaLuoighi data = {data}/>
+                    <CardMeteo data = {data}/>
+                </div>
             </>
         )
 }

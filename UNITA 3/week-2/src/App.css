@@ -1,42 +1,44 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-image: url(https://ilbolive.unipd.it/sites/default/files/2022-05/n_meteo.jpg);
+  background-size: cover;
+}
+
 .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Questo assicura che l'App occupi almeno l'intera altezza della finestra */
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333; /* Colore di sfondo */
+  color: white; /* Colore del testo */
+  text-align: center; /* Allineamento del testo */
+  margin-top: auto; /* Questo spinge il footer verso il basso */
+}
+
+#lista{
+  background-color: white;
+  border-radius: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.social{
+  margin-left: 2em;
+  margin-bottom: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img{
+  height: 2em;
+  border-radius: 20px;
+  margin-right: 4em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-body{
-  background-color: #282c34;
+#granSocial{
+  display: inline-flex;
 }

@@ -1,21 +1,29 @@
 import { Card, Button } from "react-bootstrap"
 
 const CardMeteo = (props) => {
+    // Log dei dati per il debug
+    //console.log(props.data);
+
+    // Controllo se i dati sono disponibili
+    if (!props.data || !props.data.coord) {
+        return <p>Loading...</p>; // O un messaggio di errore
+    }
 
     return (
         <>
-           <Card style={{ width: '18rem' }}>
-                <div>
-                    <p>{JSON.stringify(props.coord.lon)}</p> {/* Mostra le coordinate in modo leggibile */}
-                    <p>{JSON.stringify(props.coord.lat)}</p> {/* Mostra le coordinate in modo leggibile */}
-                </div>
+            <Card className=" w-50 m-3 text-center">
+                
                 <Card.Body>
-                    <Card.Title>{props.name}</Card.Title>
-                    <div>
-                        <p>{props.main.temp_max}</p>
-                        <p>{props.main.temp_min}</p>
+                    <Card.Title className=" p-2">{props.data.name}</Card.Title>
+                    <div className=" d-flex justify-content-around">
+                        <p>temperatura massima: {props.data.main.temp_max}</p>
+                        <p>temperatura minima: {props.data.main.temp_min}</p>
                     </div>
-                    <Button variant="primary">details</Button>
+                    <div className=" d-flex justify-content-around">
+                        <p>logitudine: {props.data.coord.lon}</p> {/* Mostra le coordinate in modo leggibile */}
+                        <p>latitudine: {props.data.coord.lat}</p> {/* Mostra le coordinate in modo leggibile */}
+                    </div>
+                    <Button variant="primary" className=" m-4">details</Button>
                 </Card.Body>
             </Card>
         </>
