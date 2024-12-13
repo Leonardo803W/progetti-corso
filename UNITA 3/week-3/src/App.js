@@ -1,23 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+import CustomNavbar from './components/CustomNavbar';
+import Novita from './components/Novita';
+import Episodi from './components/Episodi';
+import Uscite from './components/Uscite';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div id='greatConteiner'>
+      <header>
+        <CustomNavbar/>
       </header>
+      
+      <main>
+        <h1>
+          Novita'
+        </h1>
+
+        <hr></hr>
+
+        <Novita/>
+
+        <h3>
+          Nuovi episodi radio 
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg>
+        </h3>
+
+        <Episodi/>
+
+        <h3>
+          Nuove uscite
+        </h3>
+
+        <Uscite/>
+      </main>
+
+      <footer>
+
+      </footer>
     </div>
   );
 }
