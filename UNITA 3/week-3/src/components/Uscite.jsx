@@ -24,13 +24,15 @@ const Uscite = () => {
             .catch((error) => {
                 //console.log(error);
             })
+            
         }, [url])
         
         console.log(music)
 
     return (
-        <div>
+        <div className=' d-flex text-light ms-2 overflow-hidden'>
             {music.map((m) => {
+
                 //console.log(m)
                 return <SingleCard key={m.id} music={m} />
             })}

@@ -1,13 +1,13 @@
 const SingleCard = (props) => {
     return (
-        <div>
+        <div className=" m-2">
             <div>
-                <img className="terzo" src={props.music.cover.picture_medium} alt="" />
+                <img className="terzo" src={props.music.album.cover_medium} alt="" />
             </div>
 
-            <h5>
+            <p>
                 {props.music.title_short}
-            </h5>
+            </p>
 
             <p>
                 {props.music.artist.name}

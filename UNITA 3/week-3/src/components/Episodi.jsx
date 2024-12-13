@@ -7,38 +7,43 @@ import image8 from "./assets/images/2f.png"
 
 const Episodi = () => {
     return(
-        <div className=" d-flex overflow-hidden">
-            <div>
+        <div className=" d-flex overflow-hidden text-light">
+            <div className=" m-2">
                 <img className="second" src={image3} alt="immagine copertina" />
                 <p>
                     Pro'logo con Abuelo
                 </p>
             </div>
-            <div>
+
+            <div className=" m-2">
                 <img className="second" src={image4} alt="immagine copertina" />
                 <p>
                     Pro'logo con Abuelo
                 </p>
             </div>
-            <div>
+
+            <div className=" m-2">
                 <img className="second" src={image5} alt="immagine copertina" />
                 <p>
                     Pro'logo con Abuelo
                 </p>
             </div>
-            <div>
+
+            <div className=" m-2">
                 <img className="second" src={image6} alt="immagine copertina" />
                 <p>
                     Pro'logo con Abuelo
                 </p>
             </div>
-            <div>
+
+            <div className=" m-2">
                 <img className="second" src={image7} alt="immagine copertina" />
                 <p>
                     Pro'logo con Abuelo
                 </p>
             </div>
-            <div>
+
+            <div className=" m-2">
                 <img className="second" src={image8} alt="immagine copertina" />
                 <p>
                     Pro'logo con Abuelo
