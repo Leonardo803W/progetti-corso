@@ -1,0 +1,32 @@
+body{
+    background-image: url(./img/backroung\ immagine\ body.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    background-image: url(./img/vabar\ centrale.jpg);
+    background-size: contain;
+}
+
+#navbarSupportedContent{
+    margin-left: 6em;
+}
+
+#navbar-top{
+    border-top: solid 2px red;
+}
+
+.logo{
+    height: 4em;
+    border-radius: 20px;
+}
+
+
+footer{
+    border-top: solid 2px blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

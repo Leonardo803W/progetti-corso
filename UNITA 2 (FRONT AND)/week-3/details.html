@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EpiTicket One</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/detail-style.css">
+
+  </head>
+  <body class="vh-100 d-flex flex-column">
+    <header class="text-center">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body p-2" data-bs-theme="dark" id="navbar-top">
+            <div class="container-fluid">
+
+              <img src="./css/img/logo vabar.jpg" alt="logo sito" id="logo-navbar">
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="homepage.html">
+                        Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./backoffice.html">
+                        backoffice
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./details.html">
+                        details
+                    </a>
+                </ul>
+
+                <img src="./css/img/vabar centrale.jpg" alt="logo centrale" id="logo-centrale">
+
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <h1>
+            Ora di svago!!
+        </h1>
+        <h3>
+            Non vedi l'ora di scovare piu isterag dai tuoi prodotti? Sei nel posto giusto!!
+        </h3>
+    </header>
+
+    <main class="flex-grow-1">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col col-12 col-md-6" id="product-detail"></div>
+          </div>
+        </div>
+      </main>
+
+    <footer class="bg-secondary-subtle text-center">
+            <div>
+                <ul class="list-unstyled mb-0">
+                  <li>Home</li>
+                  <li>Contatti</li>
+                  <li>Dove siamo</li>
+                </ul>
+            </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script/meccanismo.js"></script>
+  </body>
+</html>

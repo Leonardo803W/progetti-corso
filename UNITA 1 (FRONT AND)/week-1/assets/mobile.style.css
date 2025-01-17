@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    line-height: 1.5;
+    max-width: 500px;
+    min-width: 450px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+#PARTIAMO{
+    margin-top: 2em;
+}
+
+a{
+    color: white;
+}
+
+header{
+    background-color: black;
+    padding: 1.5em;
+}
+
+header img{
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    height: 3em;
+}
+
+main h1,h3{
+    color: #25a2c3;
+}
+
+#section-1{
+    background-image: url(./images/banner.jpg);
+    height: 22em;
+    background-size: cover;
+    background-position: 80%;
+}
+
+#section-1 h1{
+    font-weight: bold;
+    font-size: xx-large;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 2em;
+}
+
+#section-1 p{
+    padding: 2em;
+    font-size: large;
+}
+
+#section-1 button{
+    font-size: x-large;
+    color: white;
+    background-color: #f04c2f;
+    border-color: #f04c2f;
+    border-radius: 5px;
+}
+
+#section-2{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#section-2 h3{
+    font-weight: bold;
+    font-size: larger;
+    padding: 2em;
+}
+
+#section-2 img{
+    margin-top: 2em;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#section-3{
+    background-color: #f04c2f;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: white;
+}
+
+#section-3 h2{
+    padding: 1em;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#section-3 p{
+    padding: 2em;
+}
+
+#section-3-inside{
+    padding-bottom: 1em;
+    font-size: larger;
+}
+
+#section-3-inside p{
+    padding: 1em;
+    font-size: small;
+}
+
+.central{
+    margin-top: 4em;
+    margin-bottom: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border: solid #dee1e3;
+}
+
+.central img{
+    width: 100%;
+}
+
+.central h3{
+    padding-top: 1em;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.central p{
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+}
+
+footer{
+    background-color: #25a2c3;
+    color: white;
+}
+
+footer h5{
+    padding: 1em;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+footer a{
+    padding: 0.5em;
+}
+
+footer p{
+    padding: 0.5em;
+}
+
+footer hr{
+    margin-top: 2em;
+    width: 50%;
+}
+
+#coda a{
+    display: inline;
+}
+
+#coda{
+    padding-top: 2em;
+    padding-bottom: 4em;
+}

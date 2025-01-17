@@ -1,0 +1,89 @@
+#greatConteiner {
+  background-color: #282c34;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #464950;
+}
+
+button {
+  background-color: #464950;
+}
+
+.menuIcon {
+  cursor: 'pointer',
+}
+
+.novita-container {
+  margin: 1em;
+  overflow: hidden; 
+  max-width: 100%; 
+}
+
+.titoli {
+  font-size: small;
+  opacity: 0.5;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.novita-item {
+  flex: 1;
+  margin: 10px; 
+}
+
+.image-container {
+  overflow: hidden; 
+}
+
+.first {
+  height: 10em;
+  border-radius: 20px;
+}
+
+.second {
+  height: 10em;
+  border-radius: 10px;
+}
+
+.terzo {
+  height: 10em;
+  border-radius: 20px;
+}
+
+.category {
+  display: flex;
+  padding: 2em;
+  justify-content: space-between;
+  background-color: #4d4d4d4d;
+  margin: 1em;
+  border-radius: 25px;
+  align-items: center;
+}
+
+.testo {
+  margin: 0;
+}
+
+footer {
+  background-color: #4d4d4d4d;
+}
+
+#play {
+  background-color: #282c34;
+}
+
+.icone {
+  margin: 0;
+  color: gray;
+}
+
+#icona {
+  margin: 0;
+  color: gray;
+}

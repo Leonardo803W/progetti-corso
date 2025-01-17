@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.img-change{
+    height: 3em;
+}
+
+.animation{
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+    transition: transform 0.1s ease-in-out, box-shadow 0.2s ease-out;
+}
+
+.filter-container {
+    position: relative;
+    display: inline-block;
+}
+
+.filter-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: black;
+}
+
+.filter-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    min-width: 160px;
+}
+
+.filter-dropdown label {
+    display: block;
+    margin: 8px 0;
+}
+
+.filter-dropdown button {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.filter-dropdown button:hover {
+    background-color: black;
+}
+
+.user-container {
+    position: relative;
+    display: inline-block;
+}
+
+.arrow-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow-btn:hover {
+    background-color: black;
+}
+
+.user-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    min-width: 160px;
+}
+
+.settings label {
+    display: block;
+    margin: 8px 0;
+}
+
+.settings button {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.settings button:hover {
+    background-color: black;
+}
+
+footer{
+    margin-left: 15em;
+    margin-right: 15em;
+    opacity: 0.5;
+}
+
+footer img{
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+footer p{
+    font-size: smaller;
+}
+
+footer span{
+    font-size: smaller;
+}

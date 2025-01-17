@@ -1,0 +1,201 @@
+/* Your styles here */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+header{
+    background-color: #202C3B;
+}
+
+header img{
+    height: 2.5em;
+    margin: 1em;
+}
+
+header div{
+    background-color: #34475B;
+    color: white;
+    display: flex;
+    padding-left: 1em;
+}
+
+header p{
+    margin: 0.5em;
+    font-family: sans-serif;
+}
+
+main{
+    text-align: center;
+    color: white;
+    background-color: #EAF0EE;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+#introduzione{
+    background-color: #F76400;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0.5em;
+}
+
+#central{
+    background-image: url(./images/bg-image.png);
+    height: 7em;
+    background-size: contain;
+    margin: 1em;
+    padding-bottom: 7em;
+}
+
+#central h1{
+    padding-top: 3.5em;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-bottom: 1em;
+}
+
+#central p{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#section1{
+    background-color: white;
+}
+
+#intro{
+    color: black;
+    text-align: justify;
+    padding-top: 1em;
+    margin-left: 1em;
+}
+
+#intro-photo1{
+    background-image: url(./images/img_1.jpg);
+    height: 16em;
+    width: 13em;
+    background-size: cover;
+    border-radius: 10%;
+    background-position: 51%;
+    box-shadow: #8f8f8f 12px 7px 20px 0px;
+}
+
+#intro-photo2{
+    background-image: url(./images/img_2.jpg);
+    height: 16em;
+    width: 13em;
+    background-size: cover;
+    border-radius: 10%;
+    background-position: 51%;
+    box-shadow: #8f8f8f 12px 7px 20px 0px;
+}
+
+#intro-photo3{
+    background-image: url(./images/img_3.jpg);
+    height: 16em;
+    width: 13em;
+    background-size: cover;
+    border-radius: 10%;
+    background-position: 51%;
+    box-shadow: #8f8f8f 12px 7px 20px 0px;
+}
+
+#intro-photo4{
+    background-image: url(./images/img_4.jpg);
+    height: 16em;
+    width: 13em;
+    background-size: cover;
+    border-radius: 10%;
+    background-position: 51%;
+    box-shadow: #8f8f8f 12px 7px 20px 0px;
+}
+
+#section1{
+    margin: 1em;
+}
+
+#section1 p{
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-bottom: 1em;
+}
+
+#section1 a{
+    color: #368aaf;
+    font-size: small;
+    font-weight: bolder;
+    text-decoration: auto;
+    padding-left: 1em;
+}
+
+#section1 div{
+    display: inline-flex;
+    padding-bottom: 1em;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#section2{
+    margin: 1em;
+    color: black;
+}
+
+#section2 a{
+    color: #368aaf;
+    font-size: small;
+    font-weight: bolder;
+    text-decoration: auto;
+    padding-left: 1em;
+}
+
+#section2 p{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#section2 img{
+    width: 100%;
+}
+
+#section3{
+    margin: 1em;
+    color: black;
+}
+
+#section3 a{
+    color: #368aaf;
+    font-size: small;
+    font-weight: bolder;
+    text-decoration: auto;
+    padding-left: 1em;
+}
+
+#section3 p{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#section3 img{
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    background-color: #202C3B;
+}
+
+footer p{
+    background-color: #34475B;
+    color: white;
+    padding: 1em;
+    font-family: sans-serif;
+}
+
+footer a{
+    color: white;
+    font-weight: bold;
+}
+
+footer img{
+    height: 2.5em;
+    margin: 2em;
+}
