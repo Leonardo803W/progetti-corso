@@ -1,0 +1,22 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.1">
+
+    <persistence-unit name="gestioneFormazionePU">
+
+        <class>epicode.entities.Catalogo</class>
+        <class>epicode.entities.Utente</class>
+        <class>epicode.entities.Prestito</class>
+        <class>epicode.entities.Libri</class>
+        <class>epicode.entities.Riviste</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/BACK-AND-UNITA-1-week-3-progetto"/>
+            <property name="javax.persistence.jdbc.user" value="postgres" />
+            <property name="javax.persistence.jdbc.password" value="Drago lupo9!" />
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
